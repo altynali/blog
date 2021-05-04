@@ -1,0 +1,93 @@
+
+.list{
+    margin: 2% 16%;
+    margin-left: 18%;
+    .list-title{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        h1{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 38px;
+            line-height: 45px;
+            display: inline;
+        }
+        button{
+            width: 154px;
+            height: 36px;
+            background: #007BFF;
+            border: 1px solid #007BFF;
+            border-radius: 4px;
+            color: white;
+            margin-left: 40px;
+            display: inline;
+        }
+    }
+    
+
+    ul{
+        list-style-type: none;
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+        padding: 0;
+    }
+      
+    li{
+        display: table-cell;
+        width: 50%;
+        padding-left: 30px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        overflow:hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .article-title{
+        width: 70%;
+    }
+    .article-perex{
+        width: 100%;
+    }
+    .article-buttons{
+        img{
+            cursor: pointer;
+        }
+    }
+
+    .hr{
+        border-bottom: 1px solid #DFDFDF;
+        margin-right: 50px;
+    
+    }
+    .list-article-title{
+        li{
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    .edit {
+        height: 20px;
+        width: 20px;
+    }
+    .delete{
+        height: 23px;
+        width: 20px;
+        margin-left: 25px;
+
+    }
+    .to-create{
+        cursor: inherit;
+        button{
+            cursor: pointer;
+        }
+    }
+
+    
+}

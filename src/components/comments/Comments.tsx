@@ -44,7 +44,7 @@ const Comments: React.FC<Props
         setComment('')
         console.log(article.comments.length + 1);
         
-        //window.location.reload()
+        window.location.reload()
     }
 
         var month, day, hour, today, todayHour, resultDay;

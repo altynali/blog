@@ -8,8 +8,8 @@ module.exports = {
         vendor: ['react', 'react-dom']
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'js/[name].bundle.js',
+        filename: '[name].bundle.js',
+        path: path.resolve(__dirname, 'build'),
         publicPath: '/'
     },
     devServer: {

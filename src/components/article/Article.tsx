@@ -72,6 +72,12 @@ const Article: React.FC<Props>  = ({
      const {countOfComments} = useSelector((state: RootState) => state.commentReducer);
      console.log(countOfComments);
 
+    var finalCount
+
+     if(countOfComments[articleInList.articleId] !== undefined)
+     finalCount = countOfComments[articleInList.articleId] 
+     else
+     finalCount = 0
     
     return(
         <div className="article item">
@@ -95,7 +101,7 @@ const Article: React.FC<Props>  = ({
                     pathname: `/whole/${articleInList.articleId}`
                     }}>Read whole article
                     </NavLink>
-                    <span className='article-comments'>{countOfComments[articleInList.articleId]} comments</span>
+                    <span className='article-comments'>{finalCount} comments</span>
                     
                 </div>
 

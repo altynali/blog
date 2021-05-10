@@ -20,6 +20,13 @@ const ArticleRow: React.FC<Props> = ({
 
     const {countOfComments} = useSelector((state: RootState) => state.commentReducer);
      console.log(countOfComments);
+    
+    var finalCount
+
+     if(countOfComments[article.articleId] !== undefined)
+     finalCount = countOfComments[article.articleId] 
+     else
+     finalCount = 0
 
     return(
     <div>
@@ -36,7 +43,7 @@ const ArticleRow: React.FC<Props> = ({
                     
                     <li className='article-perex'>{article.perex}</li>
                     <li>Elisabeth Strain</li>
-                    <li>{countOfComments[article.articleId]}</li>
+                    <li>{finalCount}</li>
                     <li className='article-buttons'>
                         
                         <NavLink  

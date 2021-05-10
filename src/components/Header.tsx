@@ -40,7 +40,7 @@ const Header: React.FC = () => {
                 <div className='logged-in'>
                     <NavLink to='/list' className='header-link header-link-1'>My Articles</NavLink>
                     <NavLink to='/newArticle' className='header-link header-link-1 header-create'>Create New Article</NavLink>
-                    <span onClick={logOut} className='header-link header-link-2'>Log Out</span>
+                    <span onClick={logOut} className='header-link header-link-2 logout'>Log Out</span>
                 </div>
                 )
                 : <NavLink to='/login' className='header-link header-link-2'>Log In</NavLink>

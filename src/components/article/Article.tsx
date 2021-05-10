@@ -72,10 +72,12 @@ const Article: React.FC<Props>  = ({
      const {countOfComments} = useSelector((state: RootState) => state.commentReducer);
      console.log(countOfComments);
 
-    var finalCount = 0
-     if(countOfComments[articleInList.articleId] !== undefined || countOfComments[articleInList.article] !== null) {
-        finalCount = countOfComments[articleInList.article]
-     }
+    var finalCount
+
+     if(countOfComments[articleInList.articleId] !== undefined)
+     finalCount = countOfComments[articleInList.articleId] 
+     else
+     finalCount = 0
     
     return(
         <div className="article item">

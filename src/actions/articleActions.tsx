@@ -85,6 +85,7 @@ export const deleteArticle = (id: string) => {
         await api.delete(`/articles/${id}`)
         .then(response =>{
             console.log(response);
+            fetchArticles()
         })
         .catch((error) =>{
             dispatch(ArticleActions.ArticleFail(error))

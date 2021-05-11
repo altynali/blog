@@ -85,7 +85,7 @@ export const deleteArticle = (id: string) => {
         await api.delete(`/articles/${id}`)
         .then(response =>{
             console.log(response);
-            fetchArticles()
+            
         })
         .catch((error) =>{
             dispatch(ArticleActions.ArticleFail(error))
@@ -111,7 +111,7 @@ export const createNewArticle = (title: string, content: string) => {
         })
         .then((response) => {
             console.log(response.data);
-            fetchArticles();
+            
         })
         .catch((error) =>{
             dispatch(ArticleActions.ArticleFail(error))
@@ -135,7 +135,7 @@ export const editArticle = (article, title: string, content: string) => {
         })
         .then((response) => {
             console.log(response.data);
-            fetchArticles();
+            
         })
         .catch((error) =>{
             dispatch(ArticleActions.ArticleFail(error))

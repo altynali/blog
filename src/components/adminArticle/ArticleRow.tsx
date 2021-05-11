@@ -50,7 +50,7 @@ const ArticleRow: React.FC<Props> = ({
                             to={{
                             pathname: `/list/edit/${article.articleId}`
                             }}
-                            onClick={() => window.location.reload()}
+                            onClick={() => dispatch(fetchArticles())}
                             >
                                 <img src={editIcon}
                                 alt='edit' className='edit'/>
